@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
 <mapper namespace="cn.chaopin.mapper.StudentMapper">
-<!--
-namespace:mapper的全路径名
-id:方法名
-resultType:返回值的类型
-parameterType:参数类型
-tips:resultType和parameterType分别只能有一个
--->
-    <select id="list" resultType="Student">
+    <!--
+    namespace:mapper的全路径名
+    id:方法名
+    resultType:返回值的类型
+    parameterType:参数类型
+    tips:resultType和parameterType分别只能有一个
+    -->
+    <!--    <select id="list" resultType="Student></select>-->
+    <select id="list" resultType="cn.chaopin.pojo.Student">
         select * from t_student;
     </select>
 </mapper>
